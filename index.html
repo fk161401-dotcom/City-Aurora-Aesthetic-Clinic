@@ -1,0 +1,1376 @@
+<!DOCTYPE html>
+<html lang="ur" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Aurora Aesthetic Clinic </title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Medical Luxury Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts for Medical Aesthetics -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        clinic: {
+                            gold: {
+                                light: '#F5E6CA',
+                                DEFAULT: '#C5A059', /* Sophisticated Matte Gold */
+                                dark: '#A37F3D'
+                            },
+                            slate: {
+                                50: '#F8FAFC',
+                                100: '#F1F5F9',
+                                800: '#1E293B',
+                                900: '#0F172A',
+                                950: '#0B0F17' /* Premium Deep Onyx */
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .font-serif-title {
+            font-family: 'Playfair Display', serif;
+        }
+        .text-shadow-premium {
+            text-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+        }
+        /* Custom styled scrollbar for premium aesthetic */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0F172A;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #C5A059;
+            border-radius: 4px;
+        }
+        /* Touch friendly transition settings */
+        .before-after-slider img {
+            max-width: none;
+        }
+    </style>
+</head>
+<body class="bg-clinic-slate-50 text-clinic-slate-900 dark:bg-clinic-slate-950 dark:text-white transition-colors duration-300">
+
+    <!-- TOP ANNOUNCEMENT & CONTACT BAR -->
+    <div class="bg-clinic-slate-900 text-white dark:bg-black py-2.5 px-4 border-b border-clinic-gold/20 text-xs sm:text-sm font-medium transition-colors">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-5">
+                <span class="flex items-center gap-2">
+                    <i class="fa-solid fa-phone text-clinic-gold animate-pulse"></i> 
+                    <a href="tel:03331944658" class="hover:text-clinic-gold transition font-bold tracking-wide">0333 1944658</a>
+                </span>
+                <span class="hidden md:flex items-center gap-2 border-l border-slate-700 pl-4 text-slate-300">
+                    <i class="fa-solid fa-clock text-clinic-gold"></i>
+                    <span>Opening Hours: 11:00 AM - 08:00 PM (Monday - Saturday)</span>
+                </span>
+            </div>
+            <div class="flex items-center gap-4">
+                <span class="text-slate-400 text-xs hidden lg:inline">Connect with us:</span>
+                <a href="https://tiktok.com" target="_blank" class="hover:text-clinic-gold transition duration-200" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://instagram.com" target="_blank" class="hover:text-clinic-gold transition duration-200" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://facebook.com" target="_blank" class="hover:text-clinic-gold transition duration-200" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- STICKY MEDICAL HEADER -->
+    <!-- STICKY MEDICAL HEADER -->
+    <header class="sticky top-0 z-50 bg-white/95 dark:bg-clinic-slate-950/95 backdrop-blur-md shadow-sm border-b border-slate-100 dark:border-slate-900 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20 md:h-24">
+                
+                <!-- Clinic Logo and Branding Area (Fixed Wrap Bug) -->
+                <div class="flex-shrink-0 flex items-center gap-2.5 sm:gap-3">
+                    <div class="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 bg-gradient-to-tr from-clinic-gold-dark via-clinic-gold to-clinic-gold-light rounded-xl flex items-center justify-center shadow-lg transition-transform hover:scale-105 flex-shrink-0">
+                        <span class="font-serif-title text-white text-sm sm:text-base md:text-lg font-bold tracking-wider">CAAC</span>
+                    </div>
+                    <div class="flex flex-col justify-center">
+                        <h1 class="font-serif-title text-xs sm:text-sm md:text-lg lg:text-xl font-extrabold tracking-tight text-clinic-slate-900 dark:text-white leading-tight">
+                            City Aurora <span class="text-clinic-gold">Aesthetic Clinic</span>
+                        </h1>
+                        <p class="text-[7px] sm:text-[8px] md:text-[9px] uppercase tracking-widest text-slate-500 dark:text-slate-400 font-bold mt-0.5 sm:mt-1">
+                            Aesthetic & Hair Restoration Experts
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center gap-8 font-semibold text-sm">
+                    <a href="#home" class="text-clinic-gold border-b-2 border-clinic-gold pb-1 transition">Home</a>
+                    <a href="#about" class="text-slate-600 dark:text-slate-300 hover:text-clinic-gold dark:hover:text-clinic-gold transition duration-200">About Us</a>
+                    <a href="#treatments" class="text-slate-600 dark:text-slate-300 hover:text-clinic-gold dark:hover:text-clinic-gold transition duration-200">Treatments</a>
+                    <a href="#prp-comparison" class="text-slate-600 dark:text-slate-300 hover:text-clinic-gold dark:hover:text-clinic-gold transition duration-200">PRP Showcase</a>
+                    <a href="#badges" class="text-slate-600 dark:text-slate-300 hover:text-clinic-gold dark:hover:text-clinic-gold transition duration-200">Credentials</a>
+                    <a href="#feedback" class="text-slate-600 dark:text-slate-300 hover:text-clinic-gold dark:hover:text-clinic-gold transition duration-200">Reviews</a>
+                    <a href="#contact" class="text-slate-600 dark:text-slate-300 hover:text-clinic-gold dark:hover:text-clinic-gold transition duration-200">Contact</a>
+                </nav>
+
+                <!-- Action Controls -->
+                <div class="hidden sm:flex items-center gap-4">
+                    <!-- Theme Switcher -->
+                    <button onclick="toggleDarkMode()" class="w-11 h-11 flex items-center justify-center rounded-xl bg-slate-100 dark:bg-slate-900 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-800 transition shadow-inner" aria-label="Toggle Theme">
+                        <i id="theme-icon" class="fa-solid fa-moon text-lg"></i>
+                    </button>
+
+                    <!-- WhatsApp Live Call-To-Action -->
+                    <a href="https://wa.me/923331944658?text=Hello%20City%20Aurora%20Aesthetic%20Clinic!%20I%20want%20to%20book%20an%20appointment." target="_blank" class="relative group overflow-hidden bg-gradient-to-r from-clinic-gold-dark to-clinic-gold hover:from-clinic-gold hover:to-clinic-gold-light text-white font-bold py-3 px-6 rounded-xl shadow-lg hover:shadow-clinic-gold/30 transition duration-300 flex items-center gap-2.5">
+                        <i class="fa-brands fa-whatsapp text-xl"></i>
+                        <span>Book Appointment</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Controls Trigger -->
+                <div class="flex items-center gap-2 lg:hidden">
+                    <button onclick="toggleDarkMode()" class="w-10 h-10 flex items-center justify-center rounded-xl bg-slate-100 dark:bg-slate-900 text-slate-700 dark:text-slate-300" aria-label="Toggle Theme Mobile">
+                        <i id="theme-icon-mobile" class="fa-solid fa-moon"></i>
+                    </button>
+                    <button onclick="toggleMobileMenu()" class="text-slate-800 dark:text-white focus:outline-none p-2 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-900">
+                        <i id="menu-icon" class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Mobile Side Navigation Panel -->
+        <div id="mobile-menu" class="hidden lg:hidden border-t border-slate-100 dark:border-slate-900 bg-white dark:bg-clinic-slate-950 px-4 pt-3 pb-8 space-y-2 transition-all">
+            <a href="#home" onclick="toggleMobileMenu()" class="block py-2.5 px-4 rounded-xl bg-slate-50 dark:bg-slate-900 text-clinic-gold font-bold">Home</a>
+            <a href="#about" onclick="toggleMobileMenu()" class="block py-2.5 px-4 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-900 text-slate-700 dark:text-slate-300 font-semibold">About Us</a>
+            <a href="#treatments" onclick="toggleMobileMenu()" class="block py-2.5 px-4 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-900 text-slate-700 dark:text-slate-300 font-semibold">Treatments</a>
+            <a href="#prp-comparison" onclick="toggleMobileMenu()" class="block py-2.5 px-4 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-900 text-slate-700 dark:text-slate-300 font-semibold">PRP Showcase</a>
+            <a href="#badges" onclick="toggleMobileMenu()" class="block py-2.5 px-4 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-900 text-slate-700 dark:text-slate-300 font-semibold">Credentials</a>
+            <a href="#feedback" onclick="toggleMobileMenu()" class="block py-2.5 px-4 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-900 text-slate-700 dark:text-slate-300 font-semibold">Reviews</a>
+            <a href="#contact" onclick="toggleMobileMenu()" class="block py-2.5 px-4 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-900 text-slate-700 dark:text-slate-300 font-semibold">Contact</a>
+            
+            <div class="pt-4 border-t border-slate-100 dark:border-slate-900 flex flex-col gap-3">
+                <a href="https://wa.me/923331944658?text=Hello%20City%20Aurora%20Aesthetic%20Clinic!%20I%20want%20to%20book%20an%20appointment." target="_blank" class="w-full text-center bg-gradient-to-r from-clinic-gold-dark to-clinic-gold text-white font-bold py-3 px-5 rounded-xl shadow-md flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-xl"></i>
+                    <span>Book Appointment</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- CLINICAL HERO SECTION -->
+    <section id="home" class="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-slate-950">
+        <!-- Slightly darkened modern hospital background photo -->
+        <div class="absolute inset-0 z-0 bg-cover bg-center transition-transform duration-1000 transform scale-105" 
+             style="background-image: url('https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1920&q=85');">
+        </div>
+        
+        <!-- Hospital layout dark professional overlay mask -->
+        <div class="absolute inset-0 z-10 bg-gradient-to-r from-clinic-slate-950/95 via-clinic-slate-950/80 to-transparent"></div>
+        <div class="absolute inset-0 z-10 bg-slate-950/45"></div>
+
+        <!-- Hero content wrapper -->
+        <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-20 lg:py-28">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Main Copy -->
+                <div class="lg:col-span-7 text-left space-y-6">
+                    <!-- Mini trust tag -->
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-clinic-gold/15 border border-clinic-gold/35 text-clinic-gold text-xs font-semibold tracking-wider uppercase">
+                        <i class="fa-solid fa-circle-check text-[10px] animate-pulse"></i> Certified Restoration Clinic
+                    </div>
+
+                    <!-- Main Slogan Taglines -->
+                    <h2 class="font-serif-title text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight tracking-tight text-shadow-premium">
+                        Glow Your Skin. <br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-clinic-gold-light via-clinic-gold to-clinic-gold-dark">Grow Your Hair.</span>
+                    </h2>
+
+                    <!-- Secondary Brand Slogan -->
+                    <p class="text-lg sm:text-xl font-bold text-slate-200 tracking-wide uppercase">
+                        Aesthetic & Hair Restoration Experts
+                    </p>
+
+                    <!-- Confidence Starts Here & Intro text -->
+                    <div class="border-l-4 border-clinic-gold pl-5 py-2 text-slate-300 max-w-xl text-shadow-premium">
+                        <p class="text-base sm:text-lg font-medium italic">
+                            "Confidence Starts Here"
+                        </p>
+                        <p class="text-xs sm:text-sm text-slate-400 mt-2 leading-relaxed">
+                            Experience clinic-grade transformations under a premium hospital-standard environment. We combine state-of-the-art hair restoration and high-end skin aesthetics to restore your natural glow and clinical confidence.
+                        </p>
+                    </div>
+
+                    <!-- Action buttons and Contact Badge -->
+                    <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-4">
+                        <!-- Direct Action Trigger -->
+                        <a href="https://wa.me/923331944658?text=Hello%20City%20Aurora%20Aesthetic%20Clinic!%20I%20want%20to%20book%20an%20appointment." target="_blank" 
+                           class="bg-gradient-to-r from-clinic-gold-dark via-clinic-gold to-clinic-gold-light hover:from-clinic-gold hover:to-clinic-gold-dark text-slate-950 dark:text-white font-extrabold text-center px-8 py-4.5 rounded-xl shadow-xl hover:shadow-clinic-gold/25 transition duration-300 flex items-center justify-center gap-3">
+                            <i class="fa-solid fa-calendar-check text-lg"></i>
+                            <span>Book Consultation</span>
+                        </a>
+
+                        <!-- Call Hotline Box -->
+                        <a href="tel:03331944658" 
+                           class="bg-white/10 dark:bg-slate-900/40 backdrop-blur-md border border-white/15 dark:border-slate-800 hover:bg-white/15 transition duration-300 px-6 py-4 rounded-xl flex items-center justify-center gap-3">
+                            <div class="w-11 h-11 rounded-lg bg-clinic-gold/20 flex items-center justify-center text-clinic-gold">
+                                <i class="fa-solid fa-phone-volume text-lg"></i>
+                            </div>
+                            <div class="text-left">
+                                <span class="block text-[9px] text-slate-400 uppercase tracking-wider font-bold">Call Emergency Line</span>
+                                <span class="block text-sm sm:text-base font-bold text-white tracking-wider">0333 1944658</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Visual Trust Element -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-sm rounded-3xl overflow-hidden bg-slate-900/70 backdrop-blur-lg border border-white/10 p-6 shadow-2xl space-y-6">
+                        <div class="flex items-center gap-3.5 border-b border-white/10 pb-4">
+                            <div class="w-12 h-12 bg-clinic-gold/20 rounded-xl flex items-center justify-center text-clinic-gold">
+                                <i class="fa-solid fa-hospital-user text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-base">City Aurora</h4>
+                                <span class="text-[10px] text-clinic-gold font-bold uppercase tracking-widest">Medical Standard Clinic</span>
+                            </div>
+                        </div>
+
+                        <!-- Highlights list -->
+                        <ul class="space-y-4 text-xs sm:text-sm text-slate-300">
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-shield-halved text-clinic-gold text-base mt-0.5"></i>
+                                <span><strong>No Beauty Parlor Tricks:</strong> Managed entirely by certified medical doctors and hair transplant specialists.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-microscope text-clinic-gold text-base mt-0.5"></i>
+                                <span><strong>High-Tech Medical Laser:</strong> Fully sterilized medical equipment with US-FDA standards.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-hand-holding-hand text-clinic-gold text-base mt-0.5"></i>
+                                <span><strong>Hygiene Guaranteed:</strong> Absolute sterile protocols inside our upscale clinical environment.</span>
+                            </li>
+                        </ul>
+
+                        <!-- Direct WhatsApp link marker -->
+                        <div class="bg-clinic-gold/10 rounded-xl p-3 text-center border border-clinic-gold/20">
+                            <span class="block text-[9px] uppercase font-bold text-clinic-gold-light tracking-widest mb-1">Live Assistant Chat</span>
+                            <a href="https://wa.me/923331944658" target="_blank" class="text-white hover:text-clinic-gold text-xs sm:text-sm font-semibold inline-flex items-center gap-1.5 transition">
+                                <i class="fa-brands fa-whatsapp text-emerald-500 text-lg"></i>
+                                <span>0333 1944658 — Tap to Connect</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+        <!-- Smooth fade bottom boundary mask -->
+        <div class="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-clinic-slate-50 dark:from-clinic-slate-950 to-transparent z-10"></div>
+    </section>
+
+    <!-- ABOUT CLINIC & DOCTOR SECTION -->
+    <section id="about" class="py-20 bg-white dark:bg-clinic-slate-950 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left: Aesthetic Medical Vector / Image Grid -->
+                <div class="lg:col-span-5 space-y-4">
+                    <div class="relative">
+                        <div class="absolute -top-4 -left-4 w-24 h-24 bg-clinic-gold/15 rounded-full -z-10 animate-pulse"></div>
+                        <img src="https://images.unsplash.com/photo-1579684389782-64d84b5e9053?auto=format&fit=crop&w=600&q=80" 
+                             alt="Doctor consultation" 
+                             class="rounded-3xl shadow-xl w-full object-cover h-[350px] border border-slate-100 dark:border-slate-800"
+                             onerror="this.src='https://placehold.co/600x350/C5A059/FFFFFF?text=Doctor+Consultation'">
+                        <!-- Absolute Clinical Trust Tag -->
+                        <div class="absolute -bottom-6 -right-6 bg-clinic-slate-900 text-white p-5 rounded-2xl border border-clinic-gold/30 shadow-2xl max-w-[220px]">
+                            <p class="text-clinic-gold font-bold text-xl leading-none">100%</p>
+                            <p class="text-xs text-slate-300 mt-1 font-semibold uppercase tracking-wider">Certified Medical Treatments Only</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: High-End Persuasive Medical Copy -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-clinic-gold/10 text-clinic-gold text-xs font-bold uppercase tracking-wider">
+                        <i class="fa-solid fa-circle-nodes"></i> Clinical Leadership
+                    </div>
+                    
+                    <h3 class="font-serif-title text-3xl sm:text-4xl font-extrabold text-clinic-slate-900 dark:text-white leading-tight">
+                        About Our Premium <br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-clinic-gold via-clinic-gold-dark to-clinic-gold">Clinic & Specialists</span>
+                    </h3>
+
+                    <p class="text-slate-600 dark:text-slate-300 text-sm sm:text-base leading-relaxed">
+                        At <strong>City Aurora Aesthetic Clinic</strong>, we strictly differentiate ourselves from casual beauty salons and beauty parlors. We are a registered, hospital-grade aesthetic center where scientific precision meets artistic excellence. 
+                    </p>
+
+                    <div class="space-y-4 pt-2">
+                        <!-- Clinical Doctor Trust Badge -->
+                        <div class="p-5 rounded-2xl bg-clinic-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800 flex flex-col sm:flex-row gap-4 items-start sm:items-center">
+                            <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-clinic-gold to-clinic-gold-dark flex items-center justify-center text-white flex-shrink-0">
+                                <i class="fa-solid fa-user-doctor text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-base sm:text-lg font-bold text-clinic-slate-900 dark:text-white">Headed by Certified Aesthetic Physicians</h4>
+                                <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mt-1">
+                                    Our procedures are fully supervised by certified medical professionals, ensuring zero compromises on your health, safety, and overall aesthetic outcome.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Core values grid -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div class="flex items-center gap-2.5 text-xs sm:text-sm text-slate-700 dark:text-slate-300">
+                                <i class="fa-solid fa-square-check text-clinic-gold text-base"></i>
+                                <span>No Side-Effects Assurance</span>
+                            </div>
+                            <div class="flex items-center gap-2.5 text-xs sm:text-sm text-slate-700 dark:text-slate-300">
+                                <i class="fa-solid fa-square-check text-clinic-gold text-base"></i>
+                                <span>Personalized Hair Plans</span>
+                            </div>
+                            <div class="flex items-center gap-2.5 text-xs sm:text-sm text-slate-700 dark:text-slate-300">
+                                <i class="fa-solid fa-square-check text-clinic-gold text-base"></i>
+                                <span>FDA Approved Chemical Peels</span>
+                            </div>
+                            <div class="flex items-center gap-2.5 text-xs sm:text-sm text-slate-700 dark:text-slate-300">
+                                <i class="fa-solid fa-square-check text-clinic-gold text-base"></i>
+                                <span>Premium Sterile Devices</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TREATMENTS LIST SECTION -->
+    <section id="treatments" class="py-20 bg-clinic-slate-50 dark:bg-clinic-slate-900/50 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-clinic-gold/10 text-clinic-gold text-xs font-bold uppercase tracking-wider">
+                    <i class="fa-solid fa-layer-group"></i> All Clinical Procedures
+                </div>
+                <h3 class="font-serif-title text-3xl sm:text-4xl lg:text-5xl font-extrabold text-clinic-slate-900 dark:text-white">
+                    Our Specialized Treatments
+                </h3>
+                <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400">
+                    Sarf-e-nazar medical diagnostics aur technology k sath har jild (skin) aur balo (hair) ki pareshani ka mukammal, safe, aur professional medical ilaj.
+                </p>
+
+                <!-- Dynamic Search Treatment Bar -->
+                <div class="relative max-w-md mx-auto pt-4">
+                    <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none mt-4">
+                        <i class="fa-solid fa-magnifying-glass text-slate-400"></i>
+                    </div>
+                    <input type="text" id="treatment-search" onkeyup="filterTreatments()" placeholder="Search treatment (e.g. Laser, Pimple, Mole)..." class="w-full pl-11 pr-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-clinic-slate-950 focus:outline-none focus:ring-2 focus:ring-clinic-gold text-sm transition shadow-sm">
+                </div>
+            </div>
+
+            <!-- Treatments Grid (All 20 Fully Described Cards) -->
+            <div id="treatments-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                
+                <!-- Treatment 1 -->
+                <div class="treatment-card bg-white dark:bg-clinic-slate-950 rounded-2xl border border-slate-100 dark:border-slate-850 p-5 shadow-sm hover:shadow-md transition duration-300 flex flex-col justify-between group" data-title="dark knuckles treatment">
+                    <div>
+                        <div class="relative overflow-hidden rounded-xl mb-4 h-40">
+                            <img src="https://thescopermedia.com/wp-content/uploads/2023/04/Screenshot_20230426-0656332.jpg" alt="Dark Knuckles Treatment" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/400x160/C5A059/FFFFFF?text=Skin+Resurfacing'">
+                        </div>
+                        <span class="text-xs text-clinic-gold font-bold uppercase tracking-wider">Skin Resurfacing</span>
+                        <h4 class="text-base sm:text-lg font-bold text-clinic-slate-900 dark:text-white mt-1 group-hover:text-clinic-gold transition">1. Dark Knuckles Treatment</h4>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 mt-2 leading-relaxed">
+                            Glow your hands again. Advanced clinical peelings and targeted lasers se dark knuckles ko hamesha k liye saaf karwein.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 dark:border-slate-900 mt-4">
+                        <a href="https://wa.me/923331944658?text=Hello%20City%20Aurora%20Clinic!%20I%20am%20interested%20in%201.%20DARK%20KNUCKLES%20treatment." target="_blank" class="w-full py-2 bg-slate-50 dark:bg-slate-900 hover:bg-clinic-gold hover:text-white text-clinic-slate-900 dark:text-slate-300 text-xs font-bold rounded-lg flex items-center justify-center gap-2 transition">
+                            <i class="fa-brands fa-whatsapp text-sm text-emerald-500 group-hover:text-white"></i> Inquire Treatment
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Treatment 2 -->
+                <div class="treatment-card bg-white dark:bg-clinic-slate-950 rounded-2xl border border-slate-100 dark:border-slate-850 p-5 shadow-sm hover:shadow-md transition duration-300 flex flex-col justify-between group" data-title="say goodbye to unwanted hair laser">
+                    <div>
+                        <div class="relative overflow-hidden rounded-xl mb-4 h-40">
+                            <img src="https://thfvnext.bing.com/th/id/R.c83ab2b9996b9dee7999861845d08845?rik=dngTOy0w2iO5Nw&pid=ImgRaw&r=0" alt="Laser Hair Removal" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/400x160/C5A059/FFFFFF?text=Laser+Hair+Removal'">
+                        </div>
+                        <span class="text-xs text-clinic-gold font-bold uppercase tracking-wider">Permanent Laser</span>
+                        <h4 class="text-base sm:text-lg font-bold text-clinic-slate-900 dark:text-white mt-1 group-hover:text-clinic-gold transition">2. Unwanted Hair Removal</h4>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 mt-2 leading-relaxed">
+                            Say goodbye to unwanted hair. High-end clinical hair reduction systems se facial aur body hair se hamesha k liye chutkara payein.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 dark:border-slate-900 mt-4">
+                        <a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjIJRbwAcoYTeiOtJUO7E4mBBGu8wARB1RsgCvxZtmBuZMiXj4vYSMgeWxlxz3Fi-fMTU9zKS0F9BjSRcCblQ0SKLeNSMedsaxJjVp7siQpQxsAQjtXHxI_SmU94tjs2W0okzwiOJqubkgc/s1600/How-to-Remove-Unwanted-Hair-Permanently-at-Home.jpg" target="_blank" class="w-full py-2 bg-slate-50 dark:bg-slate-900 hover:bg-clinic-gold hover:text-white text-clinic-slate-900 dark:text-slate-300 text-xs font-bold rounded-lg flex items-center justify-center gap-2 transition">
+                            <i class="fa-brands fa-whatsapp text-sm text-emerald-500 group-hover:text-white"></i> Inquire Treatment
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Treatment 3 -->
+                <div class="treatment-card bg-white dark:bg-clinic-slate-950 rounded-2xl border border-slate-100 dark:border-slate-850 p-5 shadow-sm hover:shadow-md transition duration-300 flex flex-col justify-between group" data-title="mhaso ka mukammal ilaj acne pimples">
+                    <div>
+                        <div class="relative overflow-hidden rounded-xl mb-4 h-40">
+                            <img src="638.webp" alt="Acne Treatment" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/400x160/C5A059/FFFFFF?text=Acne+Treatment'">
+                        </div>
+                        <span class="text-xs text-clinic-gold font-bold uppercase tracking-wider">Clinical Acne</span>
+                        <h4 class="text-base sm:text-lg font-bold text-clinic-slate-900 dark:text-white mt-1 group-hover:text-clinic-gold transition">3. Mhaso Ka Mukammal Ilaj</h4>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 mt-2 leading-relaxed">
+                            Mhaso aur pimples ka jadid clinical aur medical tarike se ilaj jo active acne ko jarr se khatam karta hai.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 dark:border-slate-900 mt-4">
+                        <a href="https://wa.me/923331944658?text=Hello%20City%20Aurora%20Clinic!%20I%20am%20interested%20in%203.%20Mhaso%20Ka%20Mukammal%20Ilaj." target="_blank" class="w-full py-2 bg-slate-50 dark:bg-slate-900 hover:bg-clinic-gold hover:text-white text-clinic-slate-900 dark:text-slate-300 text-xs font-bold rounded-lg flex items-center justify-center gap-2 transition">
+                            <i class="fa-brands fa-whatsapp text-sm text-emerald-500 group-hover:text-white"></i> Inquire Treatment
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Treatment 4 -->
+                <div class="treatment-card bg-white dark:bg-clinic-slate-950 rounded-2xl border border-slate-100 dark:border-slate-850 p-5 shadow-sm hover:shadow-md transition duration-300 flex flex-col justify-between group" data-title="dark lips pink lips gulabi hont siyah">
+                    <div>
+                        <div class="relative overflow-hidden rounded-xl mb-4 h-40">
+                            <img src="https://i.pinimg.com/originals/bb/27/98/bb279810bc17e860bc2a8e18f49c0a37.jpg" alt="Pink Lips Treatment" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/400x160/C5A059/FFFFFF?text=Pink+Lips+Treatment'">
+                        </div>
+                        <span class="text-xs text-clinic-gold font-bold uppercase tracking-wider">Lip Aesthetic</span>
+                        <h4 class="text-base sm:text-lg font-bold text-clinic-slate-900 dark:text-white mt-1 group-hover:text-clinic-gold transition">4. Gulabi Honto Ka Safar</h4>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 mt-2 leading-relaxed">
+                            Siyah honto ko kahein alweda. Medical peelings aur lasers se khoobsorat aur gulabi honto ka safar shuru karein.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 dark:border-slate-900 mt-4">
+                        <a href="https://wa.me/923331944658?text=Hello%20City%20Aurora%20Clinic!%20I%20am%20interested%20in%204.%20Gulabi%20Honto%20Ka%20Safar." target="_blank" class="w-full py-2 bg-slate-50 dark:bg-slate-900 hover:bg-clinic-gold hover:text-white text-clinic-slate-900 dark:text-slate-300 text-xs font-bold rounded-lg flex items-center justify-center gap-2 transition">
+                            <i class="fa-brands fa-whatsapp text-sm text-emerald-500 group-hover:text-white"></i> Inquire Treatment
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Treatment 5 -->
+                <div class="treatment-card bg-white dark:bg-clinic-slate-950 rounded-2xl border border-slate-100 dark:border-slate-850 p-5 shadow-sm hover:shadow-md transition duration-300 flex flex-col justify-between group" data-title="ghair zaroory thill mole warts">
+                    <div>
+                        <div class="relative overflow-hidden rounded-xl mb-4 h-40">
+                            <img src="https://images.unsplash.com/photo-1508186227413-bb1f5c85cb44?auto=format&fit=crop&w=400&q=80" alt="Mole Removal" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/400x160/C5A059/FFFFFF?text=Mole+Removal'">
+                        </div>
+                        <span class="text-xs text-clinic-gold font-bold uppercase tracking-wider">Clinical Removal</span>
+                        <h4 class="text-base sm:text-lg font-bold text-clinic-slate-900 dark:text-white mt-1 group-hover:text-clinic-gold transition">5. Ghair Zaroori Till Elaj</h4>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 mt-2 leading-relaxed">
+                            Jild par mojood ghair zaroori till (moles) aur warts ko baghair nishan ke jadid clinical laser se khatam karein.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 dark:border-slate-900 mt-4">
+                        <a href=https://c8.alamy.com/comp/2YRYCB7/comparison-of-a-mole-before-and-after-laser-treatment-showing-effective-removal-and-healthy-skin-2YRYCB7.jpg" target="_blank" class="w-full py-2 bg-slate-50 dark:bg-slate-900 hover:bg-clinic-gold hover:text-white text-clinic-slate-900 dark:text-slate-300 text-xs font-bold rounded-lg flex items-center justify-center gap-2 transition">
+                            <i class="fa-brands fa-whatsapp text-sm text-emerald-500 group-hover:text-white"></i> Inquire Treatment
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Treatment 6 -->
+                <div class="treatment-card bg-white dark:bg-clinic-slate-950 rounded-2xl border border-slate-100 dark:border-slate-850 p-5 shadow-sm hover:shadow-md transition duration-300 flex flex-col justify-between group" data-title="chemical peel hands brightening">
+                    <div>
+                        <div class="relative overflow-hidden rounded-xl mb-4 h-40">
+                            <img src="https://smoothsynergy.com/wp-content/uploads/Hand-chemical-peel.jpeg" alt="Chemical Peeling Hands" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/400x160/C5A059/FFFFFF?text=Hand+Peeling'">
+                        </div>
+                        <span class="text-xs text-clinic-gold font-bold uppercase tracking-wider">Skin Brightening</span>
+                        <h4 class="text-base sm:text-lg font-bold text-clinic-slate-900 dark:text-white mt-1 group-hover:text-clinic-gold transition">6. Chemical Peel for Hands</h4>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 mt-2 leading-relaxed">
+                            Chemical peel k sath dein apne hathon ko ek bilkul nayi chamak aur jhurriyon se pak premium glow.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 dark:border-slate-900 mt-4">
+                        <a href="https://smoothsynergy.com/wp-content/uploads/Hand-chemical-peel.jpeg" target="_blank" class="w-full py-2 bg-slate-50 dark:bg-slate-900 hover:bg-clinic-gold hover:text-white text-clinic-slate-900 dark:text-slate-300 text-xs font-bold rounded-lg flex items-center justify-center gap-2 transition">
+                            <i class="fa-brands fa-whatsapp text-sm text-emerald-500 group-hover:text-white"></i> Inquire Treatment
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Treatment 7 -->
+                <div class="treatment-card bg-white dark:bg-clinic-slate-950 rounded-2xl border border-slate-100 dark:border-slate-850 p-5 shadow-sm hover:shadow-md transition duration-300 flex flex-col justify-between group" data-title="skin glow drip glutathione healthy shine">
+                    <div>
+                        <div class="relative overflow-hidden rounded-xl mb-4 h-40">
+                            <img src="https://tse2.mm.bing.net/th/id/OIP.HW9MjUb7w0DkfxX2iEl65QHaHa?cb=thfvnextfalcon2&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Glow IV Drip" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/400x160/C5A059/FFFFFF?text=Glutathione+Drip'">
+                        </div>
+                        <span class="text-xs text-clinic-gold font-bold uppercase tracking-wider">IV Nutrition</span>
+                        <h4 class="text-base sm:text-lg font-bold text-clinic-slate-900 dark:text-white mt-1 group-hover:text-clinic-gold transition">7. Healthy Glow IV Drip</h4>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 mt-2 leading-relaxed">
+                            Healthy shine, fresh vibe and radiant look. Har therapeutic drip k sath skin ko andar se naya medical glow dein.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 dark:border-slate-900 mt-4">
+                        <a href="https://wa.me/923331944658?text=Hello%20City%20Aurora%20Clinic!%20I%20am%20interested%20in%207.%20Healthy%20Glow%20IV%20Drip." target="_blank" class="w-full py-2 bg-slate-50 dark:bg-slate-900 hover:bg-clinic-gold hover:text-white text-clinic-slate-900 dark:text-slate-300 text-xs font-bold rounded-lg flex items-center justify-center gap-2 transition">
+                            <i class="fa-brands fa-whatsapp text-sm text-emerald-500 group-hover:text-white"></i> Inquire Treatment
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Treatment 8 -->
+                <div class="treatment-card bg-white dark:bg-clinic-slate-950 rounded-2xl border border-slate-100 dark:border-slate-850 p-5 shadow-sm hover:shadow-md transition duration-300 flex flex-col justify-between group" data-title="chehre zakhmo nishanath scar removal">
+                    <div>
+                        <div class="relative overflow-hidden rounded-xl mb-4 h-40">
+                            <img src="https://tse3.mm.bing.net/th/id/OIP.3YJF0_kcNHgbcvhh8JGSgQHaEK?cb=thfvnextfalcon2&pid=ImgDet&w=474&h=266&rs=1&o=7&rm=3" alt="Scar Removal" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/400x160/C5A059/FFFFFF?text=Scar+Removal'">
+                        </div>
+                        <span class="text-xs text-clinic-gold font-bold uppercase tracking-wider">Clinical Laser</span>
+                        <h4 class="text-base sm:text-lg font-bold text-clinic-slate-900 dark:text-white mt-1 group-hover:text-clinic-gold transition">8. Chehre K Zakhmo Ka Elaj</h4>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 mt-2 leading-relaxed">
+                            Chehre par mojood purane zakhmo (scars) aur choton ke nishanat ko clinical micro-laser se hamesha k liye khatam karein.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 dark:border-slate-900 mt-4">
+                        <a href="https://wa.me/923331944658?text=Hello%20City%20Aurora%20Clinic!%20I%20am%20interested%20in%208.%20Chehre%20K%20Zakhmo%20Ka%20Elaj." target="_blank" class="w-full py-2 bg-slate-50 dark:bg-slate-900 hover:bg-clinic-gold hover:text-white text-clinic-slate-900 dark:text-slate-300 text-xs font-bold rounded-lg flex items-center justify-center gap-2 transition">
+                            <i class="fa-brands fa-whatsapp text-sm text-emerald-500 group-hover:text-white"></i> Inquire Treatment
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Treatment 9 -->
+                <div class="treatment-card bg-white dark:bg-clinic-slate-950 rounded-2xl border border-slate-100 dark:border-slate-850 p-5 shadow-sm hover:shadow-md transition duration-300 flex flex-col justify-between group" data-title="bb glow hydra facial therapy">
+                    <div>
+                        <div class="relative overflow-hidden rounded-xl mb-4 h-40">
+                            <img src="https://tse2.mm.bing.net/th/id/OIP.0nTDXsK88imT7RfhFrvt_wHaHa?cb=thfvnextfalcon2&rs=1&pid=ImgDetMain&o=7&rm=3" alt="BB Glow Facial" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/400x160/C5A059/FFFFFF?text=BB+Glow+Facial'">
+                        </div>
+                        <span class="text-xs text-clinic-gold font-bold uppercase tracking-wider">Premium Facial</span>
+                        <h4 class="text-base sm:text-lg font-bold text-clinic-slate-900 dark:text-white mt-1 group-hover:text-clinic-gold transition">9. BB Glow & Hydra Facial</h4>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 mt-2 leading-relaxed">
+                            Clinical skin rejuvenation system. Instant semi-permanent foundation glow aur deep suction hydra extraction combo.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 dark:border-slate-900 mt-4">
+                        <a href="https://wa.me/923331944658?text=Hello%20City%20Aurora%20Clinic!%20I%20am%20interested%20in%209.%20BB%20Glow%20%26%20Hydra%20Facial." target="_blank" class="w-full py-2 bg-slate-50 dark:bg-slate-900 hover:bg-clinic-gold hover:text-white text-clinic-slate-900 dark:text-slate-300 text-xs font-bold rounded-lg flex items-center justify-center gap-2 transition">
+                            <i class="fa-brands fa-whatsapp text-sm text-emerald-500 group-hover:text-white"></i> Inquire Treatment
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Treatment 10 -->
+                <div class="treatment-card bg-white dark:bg-clinic-slate-950 rounded-2xl border border-slate-100 dark:border-slate-850 p-5 shadow-sm hover:shadow-md transition duration-300 flex flex-col justify-between group" data-title="tattoo removal laser q switch">
+                    <div>
+                        <div class="relative overflow-hidden rounded-xl mb-4 h-40">
+                            <img src="https://tse1.explicit.bing.net/th/id/OIP.eQ-OfaNSt-t5n_2Pgq7t-wHaDh?cb=thfvnextfalcon2&rs=1&pid=ImgDetMain&o=7&rm=3"  class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/400x160/C5A059/FFFFFF?text=Tattoo+Removal'">
+                        </div>
+                        <span class="text-xs text-clinic-gold font-bold uppercase tracking-wider">Laser Surgery</span>
+                        <h4 class="text-base sm:text-lg font-bold text-clinic-slate-900 dark:text-white mt-1 group-hover:text-clinic-gold transition">10. Laser Tattoo Removal</h4>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 mt-2 leading-relaxed">
+                            Purane, permanent aur ghair-zaroori tattoos ko advanced dermatological Q-Switch laser technology se baghair nishan fade karein.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 dark:border-slate-900 mt-4">
+                        <a href="https://wa.me/923331944658?text=Hello%20City%20Aurora%20Clinic!%20I%20am%20interested%20in%2010.%20Laser%20Tattoo%20Removal." target="_blank" class="w-full py-2 bg-slate-50 dark:bg-slate-900 hover:bg-clinic-gold hover:text-white text-clinic-slate-900 dark:text-slate-300 text-xs font-bold rounded-lg flex items-center justify-center gap-2 transition">
+                            <i class="fa-brands fa-whatsapp text-sm text-emerald-500 group-hover:text-white"></i> Inquire Treatment
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Treatment 11 -->
+                <div class="treatment-card bg-white dark:bg-clinic-slate-950 rounded-2xl border border-slate-100 dark:border-slate-850 p-5 shadow-sm hover:shadow-md transition duration-300 flex flex-col justify-between group" data-title="balo extensions hair volume density">
+                    <div>
+                        <div class="relative overflow-hidden rounded-xl mb-4 h-40">
+                            <img src="https://tse3.mm.bing.net/th/id/OIP.R2g3ayZ6SENsEyX9Jw9adwAAAA?cb=thfvnextfalcon2&w=409&h=407&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Hair Extensions" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/400x160/C5A059/FFFFFF?text=Hair+Extensions'">
+                        </div>
+                        <span class="text-xs text-clinic-gold font-bold uppercase tracking-wider">Hair Volumizing</span>
+                        <h4 class="text-base sm:text-lg font-bold text-clinic-slate-900 dark:text-white mt-1 group-hover:text-clinic-gold transition">11. Hair Extension Therapy</h4>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 mt-2 leading-relaxed">
+                            Balo ka professional extension karwein. 100% natural, premium, aur thick extensions jo apke balo ko haseen volume dein.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 dark:border-slate-900 mt-4">
+                        <a href="https://wa.me/923331944658?text=Hello%20City%20Aurora%20Clinic!%20I%20am%20interested%20in%2011.%20Hair%20Extension%20Therapy." target="_blank" class="w-full py-2 bg-slate-50 dark:bg-slate-900 hover:bg-clinic-gold hover:text-white text-clinic-slate-900 dark:text-slate-300 text-xs font-bold rounded-lg flex items-center justify-center gap-2 transition">
+                            <i class="fa-brands fa-whatsapp text-sm text-emerald-500 group-hover:text-white"></i> Inquire Treatment
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Treatment 12 -->
+                <div class="treatment-card bg-white dark:bg-clinic-slate-950 rounded-2xl border border-slate-100 dark:border-slate-850 p-5 shadow-sm hover:shadow-md transition duration-300 flex flex-col justify-between group" data-title="laser hair removal reduction ball khatham">
+                    <div>
+                        <div class="relative overflow-hidden rounded-xl mb-4 h-40">
+                            <img src="https://tse3.mm.bing.net/th/id/OIP.ZCi5FXjCoBNMcW0d3DO72gHaE8?cb=thfvnextfalcon2&w=2048&h=1368&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Laser Reduction" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/400x160/C5A059/FFFFFF?text=Laser+Reduction'">
+                        </div>
+                        <span class="text-xs text-clinic-gold font-bold uppercase tracking-wider">Advanced Laser</span>
+                        <h4 class="text-base sm:text-lg font-bold text-clinic-slate-900 dark:text-white mt-1 group-hover:text-clinic-gold transition">12. Laser Se Baal Khatam Karna</h4>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 mt-2 leading-relaxed">
+                            Jadid clinical laser technology se chehre aur jism ke ghair zaroori baal hamesha k liye mukammal safe tareeqay se saaf karein.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 dark:border-slate-900 mt-4">
+                        <a href="https://wa.me/923331944658?text=Hello%20City%20Aurora%20Clinic!%20I%20am%20interested%20in%2012.%20Laser%20Se%20Baal%20Khatam%20Karna." target="_blank" class="w-full py-2 bg-slate-50 dark:bg-slate-900 hover:bg-clinic-gold hover:text-white text-clinic-slate-900 dark:text-slate-300 text-xs font-bold rounded-lg flex items-center justify-center gap-2 transition">
+                            <i class="fa-brands fa-whatsapp text-sm text-emerald-500 group-hover:text-white"></i> Inquire Treatment
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Treatment 13 -->
+                <div class="treatment-card bg-white dark:bg-clinic-slate-950 rounded-2xl border border-slate-100 dark:border-slate-850 p-5 shadow-sm hover:shadow-md transition duration-300 flex flex-col justify-between group" data-title="5 minute mole removal instant till warts">
+                    <div>
+                        <div class="relative overflow-hidden rounded-xl mb-4 h-40">
+                            <img src="https://images.unsplash.com/photo-1508186227413-bb1f5c85cb44?auto=format&fit=crop&w=400&q=80" alt="Instant Mole Removal" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/400x160/C5A059/FFFFFF?text=Instant+Mole+Removal'">
+                        </div>
+                        <span class="text-xs text-clinic-gold font-bold uppercase tracking-wider">RF Surgery</span>
+                        <h4 class="text-base sm:text-lg font-bold text-clinic-slate-900 dark:text-white mt-1 group-hover:text-clinic-gold transition">13. 5-Minute Mole Removal</h4>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 mt-2 leading-relaxed">
+                            Jild par mojood badnuma till (mole) ya warts ko advanced painless radiofrequency se sirf 5 minutes me saaf karwein.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 dark:border-slate-900 mt-4">
+                        <a href="https://wa.me/923331944658?text=Hello%20City%20Aurora%20Clinic!%20I%20am%20interested%20in%2013.%205-Minute%20Mole%20Removal." target="_blank" class="w-full py-2 bg-slate-50 dark:bg-slate-900 hover:bg-clinic-gold hover:text-white text-clinic-slate-900 dark:text-slate-300 text-xs font-bold rounded-lg flex items-center justify-center gap-2 transition">
+                            <i class="fa-brands fa-whatsapp text-sm text-emerald-500 group-hover:text-white"></i> Inquire Treatment
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Treatment 14 -->
+                <div class="treatment-card bg-white dark:bg-clinic-slate-950 rounded-2xl border border-slate-100 dark:border-slate-850 p-5 shadow-sm hover:shadow-md transition duration-300 flex flex-col justify-between group" data-title="pigmentations melasma jhaiyan freckles">
+                    <div>
+                        <div class="relative overflow-hidden rounded-xl mb-4 h-40">
+                            <img src="https://www.skyblue.com.au/wp-content/uploads/2024/04/Sky-Blue-Dermatology-Facial-Pigmentation-1200x533px.jpg" alt="Pigmentation Treatment" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/400x160/C5A059/FFFFFF?text=Pigmentation+Removal'">
+                        </div>
+                        <span class="text-xs text-clinic-gold font-bold uppercase tracking-wider">Hyperpigmentation</span>
+                        <h4 class="text-base sm:text-lg font-bold text-clinic-slate-900 dark:text-white mt-1 group-hover:text-clinic-gold transition">14. Face Pigmentation Elaj</h4>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 mt-2 leading-relaxed">
+                            Chehre par pigmentations, dark spots, aur melasma (jhaiyan) ka targeted clinical lasers aur premium peeling se mukammal ilaj aaj hi.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 dark:border-slate-900 mt-4">
+                        <a href="https://wa.me/923331944658?text=Hello%20City%20Aurora%20Clinic!%20I%20am%20interested%20in%2014.%20Face%20Pigmentation%20Elaj." target="_blank" class="w-full py-2 bg-slate-50 dark:bg-slate-900 hover:bg-clinic-gold hover:text-white text-clinic-slate-900 dark:text-slate-300 text-xs font-bold rounded-lg flex items-center justify-center gap-2 transition">
+                            <i class="fa-brands fa-whatsapp text-sm text-emerald-500 group-hover:text-white"></i> Inquire Treatment
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Treatment 15 -->
+                <div class="treatment-card bg-white dark:bg-clinic-slate-950 rounded-2xl border border-slate-100 dark:border-slate-850 p-5 shadow-sm hover:shadow-md transition duration-300 flex flex-col justify-between group" data-title="face pimple acne clinic extraction therapy">
+                    <div>
+                        <div class="relative overflow-hidden rounded-xl mb-4 h-40">
+                            <img src="https://tse1.explicit.bing.net/th/id/OIP.Pv0_AdiDxYHr6dqBhQcaawHaFQ?cb=thfvnextfalcon2&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Pimple Treatment" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://tse1.explicit.bing.net/th/id/OIP.Pv0_AdiDxYHr6dqBhQcaawHaFQ?cb=thfvnextfalcon2&rs=1&pid=ImgDetMain&o=7&rm=3'">
+                        </div>
+                        <span class="text-xs text-clinic-gold font-bold uppercase tracking-wider">Clinical Acne</span>
+                        <h4 class="text-base sm:text-lg font-bold text-clinic-slate-900 dark:text-white mt-1 group-hover:text-clinic-gold transition">15. Face Pimple Treatment</h4>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 mt-2 leading-relaxed">
+                            Ziddi pimples aur active inflammatory acne ke liye targeted medical extraction, blue light therapy, aur skin scaling.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 dark:border-slate-900 mt-4">
+                        <a href="https://wa.me/923331944658?text=Hello%20City%20Aurora%20Clinic!%20I%20am%20interested%20in%2015.%20Face%20Pimple%20Treatment." target="_blank" class="w-full py-2 bg-slate-50 dark:bg-slate-900 hover:bg-clinic-gold hover:text-white text-clinic-slate-900 dark:text-slate-300 text-xs font-bold rounded-lg flex items-center justify-center gap-2 transition">
+                            <i class="fa-brands fa-whatsapp text-sm text-emerald-500 group-hover:text-white"></i> Inquire Treatment
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Treatment 16 -->
+                <div class="treatment-card bg-white dark:bg-clinic-slate-950 rounded-2xl border border-slate-100 dark:border-slate-850 p-5 shadow-sm hover:shadow-md transition duration-300 flex flex-col justify-between group" data-title="hydra facial therapy deep cleansing suction">
+                    <div>
+                        <div class="relative overflow-hidden rounded-xl mb-4 h-40">
+                            <img src="https://www.m2medicalspaandwellness.com/wp-content/uploads/2023/05/HydraFacial-min-scaled.jpg" alt="Hydra Facial" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/400x160/C5A059/FFFFFF?text=HydraFacial+Therapy'">
+                        </div>
+                        <span class="text-xs text-clinic-gold font-bold uppercase tracking-wider">Deep Cleansing</span>
+                        <h4 class="text-base sm:text-lg font-bold text-clinic-slate-900 dark:text-white mt-1 group-hover:text-clinic-gold transition">16. Hydra Facial Therapy</h4>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 mt-2 leading-relaxed">
+                            Original multi-step medical grade HydraFacial jo skin ko vacuum deep clean, extract, aur high-potency vitamins se hydrate karein.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 dark:border-slate-900 mt-4">
+                        <a href="https://wa.me/923331944658?text=Hello%20City%20Aurora%20Clinic!%20I%20am%20interested%20in%2016.%20Hydra%20Facial%20Therapy." target="_blank" class="w-full py-2 bg-slate-50 dark:bg-slate-900 hover:bg-clinic-gold hover:text-white text-clinic-slate-900 dark:text-slate-300 text-xs font-bold rounded-lg flex items-center justify-center gap-2 transition">
+                            <i class="fa-brands fa-whatsapp text-sm text-emerald-500 group-hover:text-white"></i> Inquire Treatment
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Treatment 17 -->
+                <div class="treatment-card bg-white dark:bg-clinic-slate-950 rounded-2xl border border-slate-100 dark:border-slate-850 p-5 shadow-sm hover:shadow-md transition duration-300 flex flex-col justify-between group" data-title="chemical peels resurfacing salicylic glycolic">
+                    <div>
+                        <div class="relative overflow-hidden rounded-xl mb-4 h-40">
+                            <img src="https://tse2.mm.bing.net/th/id/OIP.tvSx-bKy526Pj4N092DueAHaHa?cb=thfvnextfalcon2&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Chemical Peels" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/400x160/C5A059/FFFFFF?text=Chemical+Peels'">
+                        </div>
+                        <span class="text-xs text-clinic-gold font-bold uppercase tracking-wider">Skin Renewal</span>
+                        <h4 class="text-base sm:text-lg font-bold text-clinic-slate-900 dark:text-white mt-1 group-hover:text-clinic-gold transition">17. Advanced Chemical Peels</h4>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 mt-2 leading-relaxed">
+                            Salicylic, Glycolic, aur premium TCA peels jo jild ki purani aur khurdari tah ko hata kar naye healthy cells ko bahar layein.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 dark:border-slate-900 mt-4">
+                        <a href="https://wa.me/923331944658?text=Hello%20City%20Aurora%20Clinic!%20I%20am%20interested%20in%2017.%20Advanced%20Chemical%20Peels." target="_blank" class="w-full py-2 bg-slate-50 dark:bg-slate-900 hover:bg-clinic-gold hover:text-white text-clinic-slate-900 dark:text-slate-300 text-xs font-bold rounded-lg flex items-center justify-center gap-2 transition">
+                            <i class="fa-brands fa-whatsapp text-sm text-emerald-500 group-hover:text-white"></i> Inquire Treatment
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Treatment 18 -->
+                <div class="treatment-card bg-white dark:bg-clinic-slate-950 rounded-2xl border border-slate-100 dark:border-slate-850 p-5 shadow-sm hover:shadow-md transition duration-300 flex flex-col justify-between group" data-title="laser scar removal fractional co2 laser">
+                    <div>
+                        <div class="relative overflow-hidden rounded-xl mb-4 h-40">
+                            <img src="https://www.drhconsult.co.uk/wp-content/uploads/2020/09/Ac-scr-image.jpg" alt="Laser Scar Removal" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/400x160/C5A059/FFFFFF?text=Laser+Scar+Removal'">
+                        </div>pid=ImgDetMain&o=7&rm=
+                        <span class="text-xs text-clinic-gold font-bold uppercase tracking-wider">Ablative Laser</span>
+                        <h4 class="text-base sm:text-lg font-bold text-clinic-slate-900 dark:text-white mt-1 group-hover:text-clinic-gold transition">18. Laser Scar Removal</h4>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 mt-2 leading-relaxed">
+                            Fractional CO2 laser resurfacing se gehre gaddhe, acne scars aur purane scars ko collapse karke naya, smooth texture banayein.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 dark:border-slate-900 mt-4">
+                        <a href="https://wa.me/923331944658?text=Hello%20City%20Aurora%20Clinic!%20I%20am%20interested%20in%2018.%20Laser%20Scar%20Removal." target="_blank" class="w-full py-2 bg-slate-50 dark:bg-slate-900 hover:bg-clinic-gold hover:text-white text-clinic-slate-900 dark:text-slate-300 text-xs font-bold rounded-lg flex items-center justify-center gap-2 transition">
+                            <i class="fa-brands fa-whatsapp text-sm text-emerald-500 group-hover:text-white"></i> Inquire Treatment
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Treatment 19 -->
+                <div class="treatment-card bg-white dark:bg-clinic-slate-950 rounded-2xl border border-slate-100 dark:border-slate-850 p-5 shadow-sm hover:shadow-md transition duration-300 flex flex-col justify-between group" data-title="prp hair therapy before after hairfall">
+                    <div>
+                        <div class="relative overflow-hidden rounded-xl mb-4 h-40">
+                            <img src="https://tse1.mm.bing.net/th/id/OIP.Y5RvXcJXM436Q-K8-znK0wHaFL?cb=thfvnextfalcon2&rs=1&pid=ImgDetMain&o=7&rm=3" alt="PRP Hair" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/400x160/C5A059/FFFFFF?text=PRP+Hair+Therapy'">
+                        </div>
+                        <span class="text-xs text-clinic-gold font-bold uppercase tracking-wider">Hair Regrowth</span>
+                        <h4 class="text-base sm:text-lg font-bold text-clinic-slate-900 dark:text-white mt-1 group-hover:text-clinic-gold transition">19. PRP Hair Therapy</h4>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 mt-2 leading-relaxed">
+                            Balo ko jhadne se rokna aur unhein mota karna. Platelet-rich plasma therapy se scalp roots ko dynamic growth factor booster dein.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 dark:border-slate-900 mt-4">
+                        <a href="#prp-comparison" class="w-full py-2 bg-clinic-gold text-white hover:bg-clinic-gold-dark text-xs font-bold rounded-lg flex items-center justify-center gap-2 transition">
+                            <i class="fa-solid fa-images"></i> View Before / After
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Treatment 20 -->
+                <div class="treatment-card bg-white dark:bg-clinic-slate-950 rounded-2xl border border-slate-100 dark:border-slate-850 p-5 shadow-sm hover:shadow-md transition duration-300 flex flex-col justify-between group" data-title="hair restoration transplant transplant hairfue">
+                    <div>
+                        <div class="relative overflow-hidden rounded-xl mb-4 h-40">
+                            <img src="https://tse2.mm.bing.net/th/id/OIP.xtD0H2r5wQZamVCPUYpoYAHaD-?cb=thfvnextfalcon2&rs=1&pid=ImgDetMain&o=7&rm=3" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/400x160/C5A059/FFFFFF?text=Hair+Restoration'">
+                        </div>
+                        <span class="text-xs text-clinic-gold font-bold uppercase tracking-wider">Surgical Restoration</span>
+                        <h4 class="text-base sm:text-lg font-bold text-clinic-slate-900 dark:text-white mt-1 group-hover:text-clinic-gold transition">20. Hair Restoration</h4>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 mt-2 leading-relaxed">
+                            Advanced hair transplant restoration. Ganjpan ka mukammal natural hairline FUE/FUT medical surgical transplantation solutions.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 dark:border-slate-900 mt-4">
+                        <a href="https://wa.me/923331944658?text=Hello%20City%20Aurora%20Clinic!%20I%20am%20interested%20in%2020.%20Hair%20Restoration." target="_blank" class="w-full py-2 bg-slate-50 dark:bg-slate-900 hover:bg-clinic-gold hover:text-white text-clinic-slate-900 dark:text-slate-300 text-xs font-bold rounded-lg flex items-center justify-center gap-2 transition">
+                            <i class="fa-brands fa-whatsapp text-sm text-emerald-500 group-hover:text-white"></i> Inquire Treatment
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERACTIVE PRP BEFORE/AFTER COMPARISON SLIDER -->
+    <section id="prp-comparison" class="py-20 bg-white dark:bg-clinic-slate-950 border-t border-b border-slate-100 dark:border-slate-900 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Details Content -->
+                <div class="lg:col-span-5 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-clinic-gold/10 text-clinic-gold text-xs font-bold uppercase tracking-wider">
+                        <i class="fa-solid fa-circle-play"></i> Real Clinic Results
+                    </div>
+                    <h3 class="font-serif-title text-3xl sm:text-4xl font-extrabold text-clinic-slate-900 dark:text-white leading-tight">
+                        PRP Hair Therapy <br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-clinic-gold via-clinic-gold-dark to-clinic-gold">Before & After Results</span>
+                    </h3>
+                    <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+                        Slide the bar to compare the difference. Platelet-Rich Plasma (PRP) treatments inject concentrated growth factors into sparse scalp areas to trigger strong follicle recovery. 
+                    </p>
+                    <div class="space-y-3.5">
+                        <div class="flex items-center gap-3 text-sm text-slate-700 dark:text-slate-300">
+                            <i class="fa-solid fa-shield text-clinic-gold text-lg"></i>
+                            <span>Non-surgical completely safe method</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-sm text-slate-700 dark:text-slate-300">
+                            <i class="fa-solid fa-gauge-high text-clinic-gold text-lg"></i>
+                            <span>Visible results within 3-4 professional cycles</span>
+                        </div>
+                    </div>
+                    <div class="pt-2">
+                        <a href="https://wa.me/923331944658?text=Hello!%20I%20want%20to%20know%20more%20details%20about%20PRP%20Hair%20Therapy." target="_blank" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-clinic-slate-900 text-white dark:bg-clinic-gold dark:text-slate-950 font-bold hover:bg-clinic-gold transition duration-300">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                            <span>Book Hair Evaluation</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Interactive Comparison Block -->
+                <div class="lg:col-span-7 flex justify-center">
+                    <div class="relative w-full max-w-lg aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl border-4 border-white dark:border-slate-900 select-none before-after-slider">
+                        
+                        <!-- Before Image (Base layer) -->
+                        <img src="after.PNG" 
+                             alt="Hair Thinning Before" 
+                             class="absolute inset-0 w-full h-full object-cover"
+                             onerror="this.src='https://placehold.co/800x600/AA7C11/FFFFFF?text=Before+Treatment'">
+                        
+                        <!-- After Image (Overlay layer) -->
+                        <div id="after-image-overlay" class="absolute inset-y-0 left-0 right-0 overflow-hidden" style="width: 50%;">
+                            <img src="before.PNG" 
+                                 alt="Hair Regrowth After" 
+                                 class="absolute inset-y-0 left-0 w-full h-full object-cover"
+                                 style="width: 512px; max-w-none;"
+                                 onerror="this.src='https://placehold.co/800x600/C5A059/FFFFFF?text=After+Restoration'">
+                        </div>
+
+                        <!-- Drag Indicator Slider Handle -->
+                        <div id="slider-handle" class="absolute inset-y-0 w-1 bg-clinic-gold cursor-ew-resize flex items-center justify-center shadow-lg" style="left: 50%;">
+                            <div class="w-10 h-10 rounded-full bg-clinic-slate-900 text-clinic-gold border-2 border-clinic-gold flex items-center justify-center text-xs font-black shadow-xl">
+                                <i class="fa-solid fa-arrows-left-right"></i>
+                            </div>
+                        </div>
+
+                        <!-- Direct Static Badge Indicators -->
+                        <span class="absolute bottom-4 left-4 bg-black/75 backdrop-blur-md px-3.5 py-1.5 rounded-lg text-[10px] font-extrabold uppercase tracking-widest text-white z-10">Before</span>
+                        <span class="absolute bottom-4 right-4 bg-clinic-gold/90 backdrop-blur-md px-3.5 py-1.5 rounded-lg text-[10px] font-extrabold uppercase tracking-widest text-slate-950 z-10">After PRP</span>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- VERIFIED BADGES & CERTIFICATES SECTION -->
+    <section id="badges" class="py-20 bg-clinic-slate-50 dark:bg-clinic-slate-900/50 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-12">
+            
+            <div class="max-w-2xl mx-auto space-y-4">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-clinic-gold/10 text-clinic-gold text-xs font-bold uppercase tracking-wider">
+                    <i class="fa-solid fa-certificate"></i> Premium Compliance
+                </div>
+                <h3 class="font-serif-title text-3xl sm:text-4xl font-extrabold text-clinic-slate-900 dark:text-white">
+                    Verified Medical Credentials & Certificates
+                </h3>
+                <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400">
+                    Humara medical layout and clinical execution high-end guidelines se fully certified hai.
+                </p>
+            </div>
+
+            <!-- Credentials Badges Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Badge 1 -->
+                <div class="p-8 rounded-2xl bg-white dark:bg-clinic-slate-950 border border-slate-100 dark:border-slate-800 shadow-sm flex flex-col items-center text-center space-y-4 group hover:border-clinic-gold/40 transition">
+                    <div class="w-16 h-16 rounded-2xl bg-clinic-gold/15 flex items-center justify-center text-clinic-gold text-2xl group-hover:scale-110 transition duration-300">
+                        <i class="fa-solid fa-user-shield"></i>
+                    </div>
+                    <h4 class="text-base sm:text-lg font-bold text-clinic-slate-900 dark:text-white">PMC / PMDC Standard</h4>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
+                        Our entire clinic operations are run strictly under government and medical regulatory council guidelines.
+                    </p>
+                </div>
+
+                <!-- Badge 2 -->
+                <div class="p-8 rounded-2xl bg-white dark:bg-clinic-slate-950 border border-slate-100 dark:border-slate-800 shadow-sm flex flex-col items-center text-center space-y-4 group hover:border-clinic-gold/40 transition">
+                    <div class="w-16 h-16 rounded-2xl bg-clinic-gold/15 flex items-center justify-center text-clinic-gold text-2xl group-hover:scale-110 transition duration-300">
+                        <i class="fa-solid fa-hospital-user"></i>
+                    </div>
+                    <h4 class="text-base sm:text-lg font-bold text-clinic-slate-900 dark:text-white">Sterile Environment</h4>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
+                        100% sterile operating rooms with zero infection risk protocols for scalp injections and resurfacing.
+                    </p>
+                </div>
+
+                <!-- Badge 3 -->
+                <div class="p-8 rounded-2xl bg-white dark:bg-clinic-slate-950 border border-slate-100 dark:border-slate-800 shadow-sm flex flex-col items-center text-center space-y-4 group hover:border-clinic-gold/40 transition">
+                    <div class="w-16 h-16 rounded-2xl bg-clinic-gold/15 flex items-center justify-center text-clinic-gold text-2xl group-hover:scale-110 transition duration-300">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h4 class="text-base sm:text-lg font-bold text-clinic-slate-900 dark:text-white">US-FDA Devices</h4>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
+                        Humari lasers, micro-extractors aur peeling solutions certified international labs se validated hain.
+                    </p>
+                </div>
+
+                <!-- Badge 4 -->
+                <div class="p-8 rounded-2xl bg-white dark:bg-clinic-slate-950 border border-slate-100 dark:border-slate-800 shadow-sm flex flex-col items-center text-center space-y-4 group hover:border-clinic-gold/40 transition">
+                    <div class="w-16 h-16 rounded-2xl bg-clinic-gold/15 flex items-center justify-center text-clinic-gold text-2xl group-hover:scale-110 transition duration-300">
+                        <i class="fa-solid fa-briefcase-medical"></i>
+                    </div>
+                    <h4 class="text-base sm:text-lg font-bold text-clinic-slate-900 dark:text-white">Zero Parlor Protocol</h4>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
+                        Hum non-scientific remedies ya chemical mixtures use nahi karte. Only approved formulas.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CLIENTS FEEDBACK SECTION -->
+    <section id="feedback" class="py-20 bg-white dark:bg-clinic-slate-950 transition-colors duration-300 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+            
+            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-4">
+                <div class="space-y-3">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-clinic-gold/10 text-clinic-gold text-xs font-bold uppercase tracking-wider">
+                        <i class="fa-solid fa-users"></i> Patient Reviews
+                    </div>
+                    <h3 class="font-serif-title text-3xl sm:text-4xl font-extrabold text-clinic-slate-900 dark:text-white">
+                        What Clients Tell About Us
+                    </h3>
+                </div>
+                <!-- Nav Controls for slider -->
+                <div class="flex gap-2">
+                    <button onclick="prevFeedback()" class="w-12 h-12 rounded-xl bg-slate-100 dark:bg-slate-900 text-slate-700 dark:text-slate-300 hover:bg-clinic-gold hover:text-white transition flex items-center justify-center">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+                    <button onclick="nextFeedback()" class="w-12 h-12 rounded-xl bg-slate-100 dark:bg-slate-900 text-slate-700 dark:text-slate-300 hover:bg-clinic-gold hover:text-white transition flex items-center justify-center">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Interactive feedback cards window -->
+            <div class="relative w-full overflow-hidden">
+                <div id="feedback-slider-container" class="flex gap-6 transition-transform duration-500 ease-out" style="transform: translateX(0px);">
+                    
+                    <!-- Review 1 -->
+                    <div class="flex-shrink-0 w-full md:w-[48%] lg:w-[31.5%] p-6 rounded-2xl bg-clinic-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800 space-y-4">
+                        <div class="flex items-center gap-1.5 text-clinic-gold text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed italic">
+                            "Mera face pimples se bhara hua tha aur bohat pareshan thi. Auroran clinic k treatment se pimple spots completely clean ho gaye!"
+                        </p>
+                        <div class="flex items-center gap-3 pt-2">
+                            <div class="w-10 h-10 rounded-full bg-slate-200 dark:bg-slate-800 flex items-center justify-center text-slate-400">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <div>
+                                <h5 class="text-xs sm:text-sm font-bold text-clinic-slate-900 dark:text-white">Amna Bibi</h5>
+                                <span class="text-[10px] text-slate-400">Acne Extraction Patient</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 2 -->
+                    <div class="flex-shrink-0 w-full md:w-[48%] lg:w-[31.5%] p-6 rounded-2xl bg-clinic-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800 space-y-4">
+                        <div class="flex items-center gap-1.5 text-clinic-gold text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed italic">
+                            "I went for PRP hair restoration. Only 4 cycles down and my bald spots are filling up with natural thick hair roots. Professional environment!"
+                        </p>
+                        <div class="flex items-center gap-3 pt-2">
+                            <div class="w-10 h-10 rounded-full bg-slate-200 dark:bg-slate-800 flex items-center justify-center text-slate-400">
+                                <i class="fa-solid fa-user text-sm"></i>
+                            </div>
+                            <div>
+                                <h5 class="text-xs sm:text-sm font-bold text-clinic-slate-900 dark:text-white">Zubair Khan</h5>
+                                <span class="text-[10px] text-slate-400">PRP Hair Patient</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 3 -->
+                    <div class="flex-shrink-0 w-full md:w-[48%] lg:w-[31.5%] p-6 rounded-2xl bg-clinic-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800 space-y-4">
+                        <div class="flex items-center gap-1.5 text-clinic-gold text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed italic">
+                            "Mera knuckles boht dark the, chemical hand peels are absolute magic! Jild bilkul chamakdar aur healthy ho chuki hai."
+                        </p>
+                        <div class="flex items-center gap-3 pt-2">
+                            <div class="w-10 h-10 rounded-full bg-slate-200 dark:bg-slate-800 flex items-center justify-center text-slate-400">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <div>
+                                <h5 class="text-xs sm:text-sm font-bold text-clinic-slate-900 dark:text-white">Sadia Imran</h5>
+                                <span class="text-[10px] text-slate-400">Chemical Resurfacing Patient</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 4 -->
+                    <div class="flex-shrink-0 w-full md:w-[48%] lg:w-[31.5%] p-6 rounded-2xl bg-clinic-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800 space-y-4">
+                        <div class="flex items-center gap-1.5 text-clinic-gold text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed italic">
+                            "5-Minute Mole removal treatment actually took exactly 5 minutes without any surgical blade pain. Highly recommended!"
+                        </p>
+                        <div class="flex items-center gap-3 pt-2">
+                            <div class="w-10 h-10 rounded-full bg-slate-200 dark:bg-slate-800 flex items-center justify-center text-slate-400">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <div>
+                                <h5 class="text-xs sm:text-sm font-bold text-clinic-slate-900 dark:text-white">Kamran Ali</h5>
+                                <span class="text-[10px] text-slate-400">Mole Removal Patient</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- APPOINTMENT FORM & LOCATION SECTION -->
+    <section id="contact" class="py-20 bg-clinic-slate-50 dark:bg-clinic-slate-900/50 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch">
+                
+                <!-- Left: Booking Form linked with WhatsApp -->
+                <div class="lg:col-span-6 bg-white dark:bg-clinic-slate-950 p-6 sm:p-8 rounded-3xl border border-slate-100 dark:border-slate-900 shadow-xl space-y-6 flex flex-col justify-between">
+                    <div>
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-clinic-gold/10 text-clinic-gold text-xs font-bold uppercase tracking-wider mb-3">
+                            <i class="fa-solid fa-calendar-plus"></i> Fast Scheduling
+                        </div>
+                        <h4 class="font-serif-title text-2xl sm:text-3xl font-extrabold text-clinic-slate-900 dark:text-white">
+                            Book Treatment Now
+                        </h4>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">
+                            Apna mutalqa treatment select karein aur form direct humare verified WhatsApp par send karein.
+                        </p>
+                    </div>
+
+                    <!-- Form Inputs -->
+                    <form id="whatsapp-booking-form" onsubmit="submitBookingForm(event)" class="space-y-4 pt-4">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-1.5">Your Full Name</label>
+                                <input type="text" id="patient-name" required placeholder="Ali Ahmed" class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900 focus:outline-none focus:ring-2 focus:ring-clinic-gold text-sm transition">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-1.5">Phone Number</label>
+                                <input type="tel" id="patient-phone" required placeholder="03XXXXXXXXX" class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900 focus:outline-none focus:ring-2 focus:ring-clinic-gold text-sm transition">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-1.5">Choose Treatment</label>
+                            <select id="selected-treatment" required class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900 focus:outline-none focus:ring-2 focus:ring-clinic-gold text-sm transition">
+                                <option value="" disabled selected>Select treatment category...</option>
+                                <option value="1. DARK KNEUKLES treatment">1. DARK KNEUKLES treatment</option>
+                                <option value="2. Laser Unwanted Hair Removal">2. Unwanted Hair Removal</option>
+                                <option value="3. Mhaso ka mukkammal ilage">3. Mhaso ka mukkammal ilaj</option>
+                                <option value="4. Gulabi Honto Ka Safar">4. Siyah Honto Ko Alweda / Gulabi Hont</option>
+                                <option value="5. Ghair zaroory thill ka elage">5. Ghair zaroory thill ka elaj</option>
+                                <option value="6. Chemical peeling for hands">6. Chemical peel for hands</option>
+                                <option value="7. Skin Glow IV Drip">7. Healthy glow IV Drip</option>
+                                <option value="8. Facial scar removal">8. Chehre k zakhmo ka elaj</option>
+                                <option value="9. BB Glow and Hydra Facial">9. BB glow and Hydra facial</option>
+                                <option value="10. Laser tattoo removal">10. Laser tattoo removal</option>
+                                <option value="11. Premium Hair Extension">11. Balo ka extension</option>
+                                <option value="12. Laser hair reduction">12. Laser se baal khatham karwana</option>
+                                <option value="13. 5-Minute Mole Removal">13. Jild par till 5 minute me khatam</option>
+                                <option value="14. Pigmentation & Melasma treatment">14. Chehre par pigmentation ka ilaj</option>
+                                <option value="15. Face pimple Treatment">15. Face pimple treatment</option>
+                                <option value="16. Hydra facial therapy">16. Hydra facial therapy</option>
+                                <option value="17. Advanced Chemical peels">17. Chemical peels</option>
+                                <option value="18. Laser scar removal">18. Laser scar removal</option>
+                                <option value="19. PRP Hair therapy">19. PRP Hair therapy</option>
+                                <option value="20. Hair restoration surgery">20. Hair restoration</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-1.5">Custom Doctor Query Message</label>
+                            <textarea id="patient-message" rows="3" placeholder="Explain your skin or hair condition..." class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900 focus:outline-none focus:ring-2 focus:ring-clinic-gold text-sm transition"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 bg-gradient-to-r from-clinic-gold-dark to-clinic-gold hover:from-clinic-gold hover:to-clinic-gold-light text-white font-extrabold rounded-xl shadow-lg hover:shadow-clinic-gold/30 transition flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-xl"></i>
+                            <span>Send Query to Clinic WhatsApp</span>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Right: Location Bar & Address details -->
+                <div class="lg:col-span-6 bg-white dark:bg-clinic-slate-950 p-6 sm:p-8 rounded-3xl border border-slate-100 dark:border-slate-900 shadow-xl flex flex-col justify-between space-y-6">
+                    <div>
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-clinic-gold/10 text-clinic-gold text-xs font-bold uppercase tracking-wider mb-3">
+                            <i class="fa-solid fa-map-location-dot"></i> Real Map Coordinates
+                        </div>
+                        <h4 class="font-serif-title text-2xl sm:text-3xl font-extrabold text-clinic-slate-900 dark:text-white">
+                            Visit Our Clinical Space
+                        </h4>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">
+                            Experience highly sanitary operating spaces and premium hospital layout in person.
+                        </p>
+                    </div>
+
+                    <!-- Map Container -->
+                    <div class="rounded-2xl overflow-hidden h-64 border border-slate-200 dark:border-slate-800 relative shadow-inner">
+                        <!-- Simulated Interactive Map Iframe -->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3321.3088941031383!2d73.07897257625124!3d33.64917953856214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df94b9f0717cb3%3A0x6bd7d21b0dc5683e!2sAesthetic%20Clinic!5e0!3m2!1sen!2spk!4v1700000000000!5m2!1sen!2spk" 
+                                class="absolute inset-0 w-full h-full border-0" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                    <div class="space-y-3 pt-2">
+                        <div class="flex items-start gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-clinic-gold/15 flex items-center justify-center text-clinic-gold flex-shrink-0 mt-0.5">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300">
+                                <strong>City Aurora Aesthetic Clinic:</strong> Premium Hospital Complex Block B, Medical Avenue, Pakistan.
+                            </p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-clinic-gold/15 flex items-center justify-center text-clinic-gold flex-shrink-0 mt-0.5">
+                                <i class="fa-solid fa-square-phone"></i>
+                            </div>
+                            <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300">
+                                <strong>Direct Dial:</strong> <a href="tel:03331944658" class="hover:text-clinic-gold transition">0333 1944658</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class="bg-clinic-slate-900 text-white dark:bg-black pt-16 pb-8 border-t border-clinic-gold/20 transition-colors">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10">
+            
+            <!-- Left Branding Info -->
+            <div class="lg:col-span-4 space-y-4">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-clinic-gold rounded-xl flex items-center justify-center text-slate-950 font-serif-title text-base font-bold">
+                        CAAC
+                    </div>
+                    <span class="font-serif-title text-lg font-bold tracking-tight text-white">City Aurora Aesthetic Clinic</span>
+                </div>
+                <p class="text-xs text-slate-400 leading-relaxed">
+                    Sufi-scientific, hospital-standard dermatology and hair transplant center. We guarantee 100% sterile protocols, certified surgeons, and safe medical results.
+                </p>
+                <div class="flex items-center gap-3 pt-2">
+                    <a href="https://tiktok.com" target="_blank" class="w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center hover:bg-clinic-gold hover:text-slate-950 transition"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://instagram.com" target="_blank" class="w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center hover:bg-clinic-gold hover:text-slate-950 transition"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://facebook.com" target="_blank" class="w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center hover:bg-clinic-gold hover:text-slate-950 transition"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+
+            <!-- Middle Columns (Opening hours & links) -->
+            <div class="lg:col-span-3 space-y-4">
+                <h4 class="text-clinic-gold text-xs font-bold uppercase tracking-widest border-b border-white/10 pb-2">Opening Hours</h4>
+                <ul class="text-xs text-slate-400 space-y-2">
+                    <li class="flex justify-between"><span>Monday:</span> <span class="text-white font-semibold">11:00 AM - 08:00 PM</span></li>
+                    <li class="flex justify-between"><span>Tuesday:</span> <span class="text-white font-semibold">11:00 AM - 08:00 PM</span></li>
+                    <li class="flex justify-between"><span>Wednesday:</span> <span class="text-white font-semibold">11:00 AM - 08:00 PM</span></li>
+                    <li class="flex justify-between"><span>Thursday:</span> <span class="text-white font-semibold">11:00 AM - 08:00 PM</span></li>
+                    <li class="flex justify-between"><span>Friday:</span> <span class="text-white font-semibold">11:00 AM - 08:00 PM</span></li>
+                    <li class="flex justify-between"><span>Saturday:</span> <span class="text-white font-semibold">11:00 AM - 08:00 PM</span></li>
+                    <li class="flex justify-between text-rose-400"><span>Sunday:</span> <span>Closed</span></li>
+                </ul>
+            </div>
+
+            <!-- Middle Quick Links / News -->
+            <div class="lg:col-span-3 space-y-4">
+                <h4 class="text-clinic-gold text-xs font-bold uppercase tracking-widest border-b border-white/10 pb-2">Latest Clinic News</h4>
+                <div class="space-y-3.5">
+                    <a href="#" class="block group">
+                        <span class="block text-[10px] text-clinic-gold font-bold uppercase">PRP Updates</span>
+                        <p class="text-xs text-slate-300 group-hover:text-clinic-gold transition mt-0.5">Jadid micro-needling device update implemented at CAAC.</p>
+                    </a>
+                    <a href="#" class="block group">
+                        <span class="block text-[10px] text-clinic-gold font-bold uppercase">Clinical Peels</span>
+                        <p class="text-xs text-slate-300 group-hover:text-clinic-gold transition mt-0.5">FDA certified chemical peel systems imported from USA.</p>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Contact Quick Panel -->
+            <div class="lg:col-span-2 space-y-4">
+                <h4 class="text-clinic-gold text-xs font-bold uppercase tracking-widest border-b border-white/10 pb-2">Contact Info</h4>
+                <div class="text-xs text-slate-400 space-y-3">
+                    <p class="flex items-start gap-2">
+                        <i class="fa-solid fa-phone text-clinic-gold mt-0.5"></i>
+                        <a href="tel:03331944658" class="hover:text-white font-bold text-white tracking-wide">0333 1944658</a>
+                    </p>
+                    <p class="flex items-start gap-2">
+                        <i class="fa-solid fa-envelope text-clinic-gold mt-0.5"></i>
+                        <span>info@cityaurora.com</span>
+                    </p>
+                    <p class="flex items-start gap-2">
+                        <i class="fa-solid fa-map text-clinic-gold mt-0.5"></i>
+                        <span>Block B, Premium Hospital, Pakistan</span>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 mt-10 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-500">
+            <p>&copy; 2026 City Aurora Aesthetic Clinic (CAAC). All rights reserved.</p>
+            <div class="flex gap-4">
+                <a href="#" class="hover:text-white">Privacy Policy</a>
+                <a href="#" class="hover:text-white">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- CORE SYSTEM INTERACTION LOGIC SCRIPT -->
+    <script>
+        // Interactive Dark Mode Toggler Function
+        function toggleDarkMode() {
+            const html = document.documentElement;
+            const themeIcon = document.getElementById('theme-icon');
+            const themeIconMobile = document.getElementById('theme-icon-mobile');
+            
+            if (html.classList.contains('dark')) {
+                html.classList.remove('dark');
+                localStorage.setItem('theme', 'light');
+                themeIcon.className = 'fa-solid fa-moon text-lg';
+                themeIconMobile.className = 'fa-solid fa-moon';
+            } else {
+                html.classList.add('dark');
+                localStorage.setItem('theme', 'dark');
+                themeIcon.className = 'fa-solid fa-sun text-lg text-clinic-gold';
+                themeIconMobile.className = 'fa-solid fa-sun text-clinic-gold';
+            }
+        }
+
+        // Handle Mobile Side Panel Navigation Menu
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const icon = document.getElementById('menu-icon');
+            
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+                icon.className = 'fa-solid fa-xmark text-2xl text-clinic-gold';
+            } else {
+                menu.classList.add('hidden');
+                icon.className = 'fa-solid fa-bars text-2xl';
+            }
+        }
+
+        // Dynamic Filtering/Search System for all 20 Treatment cards
+        function filterTreatments() {
+            const searchInput = document.getElementById('treatment-search').value.toLowerCase();
+            const cards = document.getElementsByClassName('treatment-card');
+            
+            for (let i = 0; i < cards.length; i++) {
+                const title = cards[i].getAttribute('data-title') || '';
+                if (title.includes(searchInput)) {
+                    cards[i].style.display = 'flex';
+                } else {
+                    cards[i].style.display = 'none';
+                }
+            }
+        }
+
+        // Slide/Swipe Mechanism for feedback testimonials
+        let feedbackPosition = 0;
+        function nextFeedback() {
+            const container = document.getElementById('feedback-slider-container');
+            const childWidth = container.firstElementChild.getBoundingClientRect().width;
+            const maxTranslate = container.scrollWidth - container.parentElement.clientWidth;
+            
+            feedbackPosition -= (childWidth + 24); // Account for gap
+            if (Math.abs(feedbackPosition) > maxTranslate) {
+                feedbackPosition = 0; // wrap around
+            }
+            container.style.transform = `translateX(${feedbackPosition}px)`;
+        }
+
+        function prevFeedback() {
+            const container = document.getElementById('feedback-slider-container');
+            const childWidth = container.firstElementChild.getBoundingClientRect().width;
+            
+            feedbackPosition += (childWidth + 24);
+            if (feedbackPosition > 0) {
+                const maxTranslate = container.scrollWidth - container.parentElement.clientWidth;
+                feedbackPosition = -maxTranslate; // wrap back
+            }
+            container.style.transform = `translateX(${feedbackPosition}px)`;
+        }
+
+        // WhatsApp interactive Dynamic Form compilation
+        function submitBookingForm(event) {
+            event.preventDefault();
+            
+            const name = document.getElementById('patient-name').value;
+            const phone = document.getElementById('patient-phone').value;
+            const treatment = document.getElementById('selected-treatment').value;
+            const message = document.getElementById('patient-message').value;
+            
+            const compiledText = `Assalam-o-Alaikum City Aurora Aesthetic Clinic!\n\nI want to book an appointment with your specialists:\n\n*Name:* ${name}\n*Phone:* ${phone}\n*Treatment:* ${treatment}\n*Query:* ${message}`;
+            const encodedText = encodeURIComponent(compiledText);
+            
+            // Redirect straight to verified clinic WhatsApp number
+            const whatsappUrl = `https://wa.me/923331944658?text=${encodedText}`;
+            window.open(whatsappUrl, '_blank');
+        }
+
+        // Interactive PRP Before/After slider implementation
+        const sliderContainer = document.querySelector('.before-after-slider');
+        const handle = document.getElementById('slider-handle');
+        const overlay = document.getElementById('after-image-overlay');
+
+        if (sliderContainer && handle && overlay) {
+            const moveSlider = (clientX) => {
+                const rect = sliderContainer.getBoundingClientRect();
+                const position = clientX - rect.left;
+                let percentage = (position / rect.width) * 100;
+                
+                if (percentage < 0) percentage = 0;
+                if (percentage > 100) percentage = 100;
+
+                handle.style.left = `${percentage}%`;
+                overlay.style.width = `${percentage}%`;
+            };
+
+            // Mouse Events
+            sliderContainer.addEventListener('mousemove', (e) => {
+                if (e.buttons === 1) { // Left click held down
+                    moveSlider(e.clientX);
+                }
+            });
+            sliderContainer.addEventListener('mousedown', (e) => {
+                moveSlider(e.clientX);
+            });
+
+            // Touch Events (Fully compatible on mobile)
+            sliderContainer.addEventListener('touchmove', (e) => {
+                if (e.touches && e.touches[0]) {
+                    moveSlider(e.touches[0].clientX);
+                }
+            }, { passive: true });
+            
+            sliderContainer.addEventListener('touchstart', (e) => {
+                if (e.touches && e.touches[0]) {
+                    moveSlider(e.touches[0].clientX);
+                }
+            }, { passive: true });
+        }
+
+        // Load Default user preferred dark/light theme
+        window.addEventListener('DOMContentLoaded', () => {
+            const savedTheme = localStorage.getItem('theme');
+            const html = document.documentElement;
+            const themeIcon = document.getElementById('theme-icon');
+            const themeIconMobile = document.getElementById('theme-icon-mobile');
+
+            if (savedTheme === 'dark' || (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                html.classList.add('dark');
+                if (themeIcon) themeIcon.className = 'fa-solid fa-sun text-lg text-clinic-gold';
+                if (themeIconMobile) themeIconMobile.className = 'fa-solid fa-sun text-clinic-gold';
+            } else {
+                html.classList.remove('dark');
+                if (themeIcon) themeIcon.className = 'fa-solid fa-moon text-lg';
+                if (themeIconMobile) themeIconMobile.className = 'fa-solid fa-moon';
+            }
+        });
+    </script>
+</body>
+</html>
